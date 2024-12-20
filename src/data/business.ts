@@ -54,7 +54,7 @@ export const clientPartnerships: ClientPartnership[] = [
   },
   {
     type: 'Retail Investors',
-    description: 'As market conditions develop, we\'ll expand our brokerage services to include individual investors looking to participate in Ethiopia\'s financial growth.',
+    description: 'We provide brokerage services to include individual investors looking to participate in Ethiopia\'s financial growth.',
     category: 'retail'
   }
 ];
