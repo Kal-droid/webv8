@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { clientPartnerships } from '../../data/business';
 import { Users, Building2, Landmark, UserCircle } from 'lucide-react';
 import Text from '../common/Text';
+import { FEATURE_IMAGES } from '../../constants/images';
 
 const iconMap = {
   institutional: Users,
@@ -25,23 +26,13 @@ export default function Partnerships() {
           >
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
               <img
-                src="/images/building-partnerships.png"
+                src={FEATURE_IMAGES.partnerships}
                 alt="Building Strong Partnerships"
                 className="w-full h-full object-cover"
               />
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent" />
-              
-              {/* Decorative Elements */}
-              <motion.div
-                className="absolute inset-0 border-2 border-primary/10"
-                animate={{ opacity: [0.2, 0.5, 0.2] }}
-                transition={{ duration: 3, repeat: Infinity }}
-              />
             </div>
-            
-            {/* Background Pattern */}
-            <div className="absolute -bottom-6 -left-6 w-64 h-64 bg-accent/10 rounded-full blur-3xl -z-10" />
           </motion.div>
 
           {/* Right Column - Content */}
